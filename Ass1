@@ -1,0 +1,46 @@
+# Import Pandas Library
+import pandas as pd
+
+
+dataset = pd.read_csv('STATS.csv')
+
+# Show dataset
+# head() bydefault show
+# 5 rows of the dataframe
+dataset.head()
+
+# Calculate the Mean
+# of 'Salary' column
+mean = dataset['Salary'].mean()
+
+# Print mean
+print(mean)
+
+# Calculate Median of 'Salary' column
+median = dataset['Salary'].median()
+
+# Print median
+print(median)
+
+# Calculate Mode of 'Country' column
+mode = dataset['Country'].mode()
+
+# Print mode
+print(mode)
+
+# Calculate Standard Deviation
+# of 'Salary' column
+std = dataset['Salary'].std()
+
+# Print standard deviation
+print(std)
+
+# importing pandas as pd
+import pandas as pd
+
+# Making data frame from the csv file
+df = pd.read_csv("STATS.csv")
+
+# To find the correlation among
+# the columns using kendall method
+df.corr(method='kendall')
